@@ -21,7 +21,7 @@ function App() {
           const answer = decodeString(questionItem.correct_answer);
           const options = [
             ...questionItem.incorrect_answers.map((a) => decodeString(a)),
-            answer,
+            answer, 
           ];
           return {
             id: `${index}-${Date.now()}`,
